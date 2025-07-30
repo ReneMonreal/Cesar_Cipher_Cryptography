@@ -1,0 +1,32 @@
+
+---
+
+### ✅ `.gitignore`
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# macOS system files
+.DS_Store
+
+# Python environment
+.venv/
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs and backups
+*.log
+*.bak
+*.swp
