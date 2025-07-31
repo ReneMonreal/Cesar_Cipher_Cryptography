@@ -4,8 +4,7 @@ This is a simple Python implementation of the Caesar Cipher — a type of substi
 
 ## 📂 Project Structure
 
-- `cesar_cipher.py` — Core logic to encrypt and decrypt messages using Caesar Cipher.
-- `main.py` — Main program interface for user input and output.
+- `main.cpp` — Core logic to encrypt and decrypt messages using Caesar Cipher.
 - `tests/` — (Optional) Unit tests for encryption/decryption functions.
 
 ## 🚀 How to Use
