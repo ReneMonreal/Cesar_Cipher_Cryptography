@@ -2,6 +2,8 @@
 
 def encrypt(letter, key):
     return((ord(letter)) + key)
+def decrypt(letter, key):
+    return((ord(letter)) - key)
 
 
 print("----------------------------------")
@@ -33,7 +35,6 @@ while(running):
         cryptedMessage = ""
         for x in message:
             ASCIIqueue.append(encrypt(x, key))
-            print(ASCIIqueue)
         
         #nums back into str
         for num in ASCIIqueue:
@@ -42,7 +43,16 @@ while(running):
         print(f'Coded Message: {cryptedMessage}')
 
     elif choice == "2": 
-        pass
+        cryptedMessage = str(input(("What is your coded Message?: ")))
+        key = int(input("What is your key?: "))
+        for x in cryptedMessage:
+            ASCIIqueue.append(decrypt(x, key))
+        
+        for num in ASCIIqueue:
+            message = message + chr(num)
+        
+        print(f"Decoded Message: {message}")
+
     elif choice == "3":
         running = False
 
