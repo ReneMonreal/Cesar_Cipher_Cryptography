@@ -1,4 +1,3 @@
-#Work in progress!!!
 
 def encrypt(letter, key):
     return((ord(letter)) + key)
