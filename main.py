@@ -27,11 +27,22 @@ while(running):
         except ValueError:
             print("Invalid key. Please enter a number.")
             continue
+
+        #Convert each letter into ascii nums
         ASCIIqueue = []
         cryptedMessage = ""
-        #Loop Through the message
         for x in message:
             ASCIIqueue.append(encrypt(x, key))
-            print(x,(ord(x)) ,encrypt(x, key))
-        #Shit ASCII Letters by code
+            print(ASCIIqueue)
+        
+        #nums back into str
+        for num in ASCIIqueue:
+            cryptedMessage = cryptedMessage + chr(num)
+        
+        print(f'Coded Message: {cryptedMessage}')
+
+    elif choice == "2": 
+        pass
+    elif choice == "3":
+        running = False
 
